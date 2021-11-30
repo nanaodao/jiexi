@@ -1,0 +1,26 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+document.oncontextmenu = function () { return false; };//禁用右键
+document.onkeydown = function () {if (window.event && window.event.keyCode == 123) {event.keyCode = 0;event.returnValue = false;return false;}};//禁用F12
+</script>
+
+</head>
+<body>
+<center>点击播放后等待几秒，别急~</center>
+  <div class='base'>
+  <div class='cube'></div>
+  <div class='cube'></div>
+  <div class='cube'></div>
+  <div class='cube'></div>
+  <div class='cube'></div>
+  <div class='cube'></div>
+  <div class='cube'></div>
+  <div class='cube'></div>
+  <div class='cube'></div>
+</div>
+</body>
+</html>

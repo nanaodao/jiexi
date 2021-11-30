@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<script>
+var u = document.URL;
+var pos = u.indexOf('#');
+var tourl = u.substr(pos+1);
+tourl = tourl.replace(/\'/g,'').replace(/"/g,'').replace(/>/g,'').replace(/</g,'');
+</script>
+<script>document.write('<meta HTTP-EQUIV="REFRESH" content="0.1;URL='+tourl+'"/>');</script>
+</head>
+<body>
+</body>
+</html>
